@@ -1,0 +1,24 @@
+LD49 - Unstable reboot.
+This is not fun - why.
+	- Camera is wrong, Should be first person
+		- FPS
+	- AI just chases.  Would like AI to chase offset of where I am
+	- AI stops chasing when it looses sight of me - should go to last known location.
+	- Points -> Win State
+	- Powerups -> Catch the ghosts, faster,bonus points
+	
+	-> What is the core loop?
+	-> What is the fun loop?
+	-> How can I build parkor into the mechanic?
+	
+	-> Graphics feels distracting, too monotone, too repetitive.
+	-> Graphics does not give a sense of space (location/orientation)
+	-> Minimap would be valueable.
+	
+- Mikes wall level felt better even though the AI sucked.
+ - points?
+ - climbing up the stair - secret level
+ - 360 in air -> how can we add this to a game mechanic?  
+	Powerup respawn in midair?
+	
+	
