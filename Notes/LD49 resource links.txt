@@ -1,0 +1,42 @@
+Ludem Dare 50
+Pac-Man inspired maze game
+
+Draw walls - Addon
+https://www.youtube.com/watch?v=jAjrgsXee9g
+Unreal content store - Procedural Spline Walls System
+
+
+
+how to sub characters
+https://www.youtube.com/watch?v=dVmtM0dXS6o
+
+
+
+How to animate opponents
+
+
+
+Basic AI
+https://www.youtube.com/watch?v=-KDazrBx6IY
+WTF:  https://www.youtube.com/watch?v=WFvG9wNOwoY
+https://www.youtube.com/watch?v=nshHCycft4A
+
+Behaviour tree
+WTF:  https://www.youtube.com/watch?v=bsDT95UdPbc
+https://www.youtube.com/watch?v=CSxL29dX4i8
+https://www.youtube.com/watch?v=iY1jnFvHgbE
+
+
+https://www.youtube.com/watch?v=h0Kb42oCoYg
+
+
+
+Nav Meshes
+https://docs.unrealengine.com/4.26/en-US/API/Runtime/NavigationSystem/NavMesh/
+https://docs.unrealengine.com/4.27/en-US/Resources/ContentExamples/NavMesh/
+
+Start Screen
+https://www.youtube.com/watch?v=WoRgDuUNoSc
+
+
+https://calyxinstitute.org/projects/calyx-os

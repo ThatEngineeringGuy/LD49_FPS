@@ -1,0 +1,18 @@
+gAME jAM IDEA
+PAC-MAN in Unreal
+run through a maze
+have "ghosts" chase you 
+ - running behind you 
+ - running to where you will be
+ - running to two squares above you
+ - running to your current location
+ 
+ Need
+ Nav Mesh
+ Map
+ Pickups
+ UI scoreboard
+ Characters - Unreal/Paragon characters
+ Pac-man style maze
+ First person/third person shooter camera rig
+ 

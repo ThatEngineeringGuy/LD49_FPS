@@ -1,0 +1,248 @@
+LD Theme: Unstable
+
+Cameras - done
+Player character -> wraith  - NOPE - done
+Walls - done
+Nav Mesh - done
+Enemies to chase player
+Pickup - count pickups and display how many are left (of each color)
+
+Powerups 
+  UI - points collected/points remaining to goal
+  Win notification
+  Lose notification 
+  - Respawn on death.
+
+
+
+
+
+
+
+-------------------------------------------------------------------
+Core concept
+
+Nitroglycerin Man (Timer runs out - explode and respawn)
+Nitroglycerin formula - C3H5(NO3)3
+The nitrate ion is a polyatomic anion with the empirical formula NO3
+
+Game mechanic
+Third person tag type game.
+No shooting - just tag mechanic
+
+Pick up each element, 3 carbon, 5 hydrogen, 9 nitrogen, 9 oxygen => collect all 26 to win
+	- 4 different colored pickups C H N O - match ghost colors
+	C = Blue 	3
+	H = Pink 	5
+	N = Red   	9
+	O = Orange	9
+	
+	
+	- Big power pellet to change so player can chase ghosts
+
+When you get hit by the "ghosts", player respawns (die 3x)
+ 3 lives
+ 
+ 4 "ghosts", one for each element
+--> Depending on difficulty - differnt AI (at player, behind player, in front +2 units, player +other ghost = destination)
+ -- use a unreal stock character...
+ -- Paragon character for us.
+ -- Stock mannequin as ghosts - apply color tint (red, orange, blue, pink) for different enemies.
+	-- Dark blue tint in chase mode.
+
+Color scheme
+https://www.schemecolor.com/pac-man-game-colors.php
+Name: Yellow
+Hex: #FFFF00
+RGB: (255, 255, 0)
+CMYK: 0, 0, 1, 0
+
+Name: Neon Blue
+Hex: #1919A6
+RGB: (25, 25, 166)
+CMYK: 0.849, 0.849, 0, 0.349
+
+Name: Bluebonnet
+Hex: #2121DE
+RGB: (33, 33, 222)
+CMYK: 0.851, 0.851, 0, 0.129
+
+Name: Tumbleweed
+Hex: #DEA185
+RGB: (222, 161, 133)
+CMYK: 0, 0.274, 0.400, 0.129
+
+Name: Red
+Hex: #FD0000
+RGB: (253, 0, 0)
+CMYK: 0, 1, 1, 0.007
+
+Name: Electric Green
+Hex: #00FF00
+RGB: (0, 255, 0)
+CMYK: 1, 0, 1, 0
+
+
+
+
+
+Run through a maze - spline maze - pac man similar + roll our own.
+
+Ghosts Modes
+https://gameinternals.com/understanding-pac-man-ghost-behavior
+https://www.gamedeveloper.com/design/the-pac-man-dossier
+ Chase, Scatter, or Frightened
+"While in Chase mode, all of the ghosts use Pac-Man's position as a factor in selecting their target tile, though it is more significant to some ghosts than others. In Scatter mode, each ghost has a fixed target tile, each of which is located just outside a different corner of the maze. This causes the four ghosts to disperse to the corners whenever they are in this mode. Frightened mode is unique because the ghosts do not have a specific target tile while in this mode. Instead, they pseudorandomly decide which turns to make at every intersection. A ghost in Frightened mode also turns dark blue, moves much more slowly and can be eaten by Pac-Man. However, the duration of Frightened mode is shortened as the player progresses through the levels, and is completely eliminated from level 19 onwards."
+
+
+
+
+Visual effect of being unstable...
+	[no]  Glitch effect, 
+	[no] color changing effect on pickups
+
+	[no for now - get maze and AI first]  Exploding blocks or pickups -- 
+	(1) pickups blow you back
+	(2) hyperspeed
+	(3) does nothing
+	(4) Eat the ghosts - you damage them.  - > You gain an element!
+	(more if time/ideas permit)
+	all pickups do this (little ones - little effect - big ones big effect)
+
+Pick up enough "unstable" compounds to make a bomb
+ - what is the recipe for nitroglycerin -> Part of UI
+ - 
+
+Countdown timer - time to explode = music track length?
+For a pac man type game, do you want a portal spawner from one side to the other.
+
+- 4 components are the power pellets,
+- Getting all = win the level - Death by giant explosion
+- Die by ghost = lose (1 or more) components -> respawn
+
+-> Music Kevin McCloud - find a music track Mike likes.
+->> Ethernight Club
+->> Shiny Tech II
+
+
+
+behavioural descriptive interview: Gabriel @ BSD
+https://www.eventbrite.ca/e/landing-a-job-in-games-tickets-181276411627
+------------------------------------------------
+
+win condition
+lose condition
+how you can interact with the world
+
+Player perspective - feedback 
+ Running around Third person 
+  - make mazes easier
+  - easier to spot "ghosts"
+
+
+
+
+
+------------------
+Sunday this twitch channel
+- demo.
+
+=================================================
+Unreal Notes
+==================================================
+RGB Color Codes
+https://rgbcolorcode.com/color/FF4DFF
+
+
+Unreal Engine 4 Tutorial: Interactable Pick Up Items (Press "E") #interact #UE4 #object
+https://www.youtube.com/watch?v=zSu9uHyGCFo
+
+
+CHANGING PAWNS
+Retargeting
+
+
+
+Custom Unreal Engine 4 Character - Replacing the mannequin! | Mini tutorial | UE 4.26
+https://youtu.be/5yG4sGhz4RE
+
+
+How To Replace The UE4 Mannequin
+https://youtu.be/dVmtM0dXS6o
+
+
+HTF do I? Change Default Spawning Character in Unreal Engine 4 ( UE4 )
+https://youtu.be/EjSf1Hru_u0
+@2m55  https://www.youtube.com/watch?v=4B6oqeLRkTY&t=21s
+
+How To Change Character's In Game With A Button Press - Unreal Engine 4 Tutorial\
+https://youtu.be/GAlBfDtTcYE
+
+Death and respawn (single and multiplayer)
+https://www.youtube.com/watch?v=F_hRu2MTpuo
+https://www.youtube.com/watch?v=qXC7R-1U560
+
+
+PICKUPS
+UE4 - Tutorial - Magnetic Pickups
+https://youtu.be/ZOGaP3ODSAw
+
+
+changing material colors [pickups for example]
+https://www.versluis.com/2020/09/change-material-colour-ue4/
+>>In the material, change a value to a parameter.
+
+
+
+Item Spawner 
+https://www.versluis.com/2020/10/spawn-characters-ue4/
+https://www.youtube.com/watch?v=dbLFHflVleg
+
+
+
+[long] https://www.youtube.com/watch?v=dbLFHflVleg
+[short] https://www.youtube.com/watch?v=XMZLEqiRiK8
+
+
+[Crappy audio]
+https://www.youtube.com/watch?v=V-_UoT65Tyc
+material
+Constant3Color => Base Color 
+
+https://www.raywenderlich.com/504-unreal-engine-4-materials-tutorial
+
+
+Adding a font to unreal
+https://youtu.be/EK-fByHbt8M
+
+
+
+
+
+
+
+Mixamo is available for free
+- Requires an Adobe ID 
+Can only work on one model at a time.
+Adobe Fuse [discontinued]
+Adobe mixamo [
+
+
+
+NVidia Sucks
+https://answers.unrealengine.com/questions/1006103/view.html
+Unreal crashing alot
+https://answers.unrealengine.com/questions/1012618/view.html
+https://nvidia.custhelp.com/app/answers/detail/a_id/5157
+https://answers.unrealengine.com/questions/1012618/view.html
+https://www.auslogics.com/en/articles/fix-unreal-engine-crashes/
+
+
+
+
+
+
+
+
+
+
