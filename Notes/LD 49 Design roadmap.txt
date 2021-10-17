@@ -1,0 +1,143 @@
+LD49 Design roadmap
+
+//////////////////////////////////////
+//  Timeline						//
+//////////////////////////////////////
+
+Oct 1-3 - original LD49 game built. 3rd party spline libary added 1GB.
+	Posted to itch. 
+	Not happy. 1GB package exceeds amount needed for this type of project.
+	
+Oct 4-10 - Reworked the project to remove dependency on spline library.
+		Project dropped to 200MB.
+		Lost fun elements
+		- Need to reimplement pickups (easy)
+		- Color scheeme feels harsher and less organic.  
+		-> AI is working! It is still braindead, but it works. 
+			- replaced spline package BSP meshes with static meshes from Blender.
+			
+Oct 17 - Looked at using Github to store project. 
+
+Future work
+1) Finish Unreal Ninja course
+	- Saving and loading 
+	- Blueprints and gameplay
+	
+2) Finish Game - job hunting workshop -> Building a portfolio.
+	- Dig up Unity games (Bring home bacon, There goes the neighborhood, motor simulator)
+ 	- Do I still have the blockout varient?
+
+3) Practice skills
+	- Mesh generatation in blender - refine graphics
+	- Work with AI, make 4 varients 
+	- UMG for player feedback.
+	- Scene/level transitions - opening scene, credits, win/lose
+	
+4) A complete game
+	- 4 varients of AI.
+	- win/loss states + player feedback
+	- Simple HUD
+	- Player takes damage/player deals damage to ghost mechanic.
+
+//////////////////////////////////////
+//  Project Goals					//
+//////////////////////////////////////
+
+Mike really likes this project, so I would like to use that 
+as a motivating point to apply knowledge of unreal.  
+As this is my one of my first non-tutorial project in Unreal,
+ - I want to keep the concept and scope simple.
+ - Integrate knowledge 
+ - Focus on finding the fun, so that I will want to keep developing this project. 
+ - Learn how to modify the basic AI that was implemented.
+ 
+Working through the Unreal Ninja course.  
+ - Apply savegame blueprints.
+ - Increase comfort with blueprints overall - particulary AI.
+ - Using shapekeys/morph targets didn't work.  But I would still like to find a way to create maze creation tools. 
+
+//////////////////////////////////////
+
+//////////////////////////////////////
+//	Challenges						//
+//////////////////////////////////////
+
+Challenge: needs to be more fun.
+Ideas:
+ - do the pac man points pickups.  These were in the original LD49 game and provided immediate goals.
+ - Player takes damage/player deals damage to ghost mechanic.
+ - When are you in danger vs in control
+ - How can skill affect the situation (do you have efficacy and agency)
+ 
+ 
+ 
+Challenge: game feel - camera clipping.
+ - The camera is clipping into the walls too much which is distracting to game feel.
+ - Could make the map more open 
+	- scale up all the geometry
+	- remove walls and make the map simpler.
+** - could change camera to FPS
+	- I want to vary camera from FPS, to 3rd person, to minimap
+	- game was based on 3rd person template - 
+	- HTF do I? Change Cameras in Unreal Engine 4 Blueprints
+	- https://youtu.be/uW86ZGxesmc
+	
+
+Challenge: game feel
+ - Think about goals and feedback.
+ - Short term goals - get the power points
+ - Medium term goals - get power ups that let you beat the ghosts.
+ - long term goals - build a level system.  Ghost speed increases by level.
+
+Challenge: core game mechanic 
+ - Core mechanic of pac man is chase, scatter, and flee.
+	A) Chase player
+	B) Scatter back to spawn point.  then apply simple AI to loop around nearby object.
+	C) Flee - player can kill them - run. 
+ - Right now the AI only does chase - badly.
+	1) Need to modify each ghost to have an AI varient.
+	A) Ahead of player
+	B) Behind player
+	C) Directly at player
+	D) (Clyde) the combination of C position and player.
+ - collect all power points to win the level
+	- this was the nitroglycerin formula from LD game.
+	- See original thoughts for pickup ideas. 
+ - Pac man implemented the center teleporter for player 
+	- I don't recall ghosts following player through this.  
+	- they might wander through it, but not follow. 
+
+Challenge: Player feedback - HUD
+ - think about HUD design.
+	- points remaining on screen
+	- score
+	- AI state - chase/scatter/flee tells for the player.
+
+Challenge: Audio cues
+ - chomp a power point.
+ - Movement
+ - proximity of ghosts (tempo change? or sound)
+ - time remaining on power pellets - do I want to flash the HUD as warning?
+ 
+Challenge: save and load
+ - See https://www.unrealengine.com/en-US/onlinelearning-courses/blueprint-runtime-saving-and-loading
+ - Features save and load systems
+ - High scores, best time
+ - Save on exit
+ - Save on lose focus (How?)
+ - How do I save when computer shuts down? -> Save points at level, restore to last level.
+ 
+Challenge: Mike likes the jump and parcore mechanisms that allow for evading the ghosts by getting off the nav mesh.
+ - Do I want to fix it.  
+ - Should it be a player feature?
+ - How would this play out in multiplayer.
+ - Current AI still rushes the player even when off nav mesh.
+
+Challenge: Mini-map
+ - was able to implement in Unity.  
+ - How do you do a second camera with a different renderer?
+ 
+Challenge: Multiplayer
+ - Needs consideration. 
+ - Coop mode.
+ - Server replicaiton - Future work, this project might work for it.
