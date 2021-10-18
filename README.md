@@ -10,3 +10,10 @@ Shift to sprint
 Caps lock to go faster
 Space to jump.
 
+Program Info:
+Unreal version 4.26.2
+No external packages, some starter content
+
+Developers:
+Andrew Roncin (Programming, Art) 
+Michael Roncin (Game Design, Testing)
