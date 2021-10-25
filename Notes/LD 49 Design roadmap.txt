@@ -48,7 +48,12 @@ Future work
 	[Not started]
 	- Player deals damage to ghost mechanic.
 	
-
+5) Added music for background
+	Need credits for Incompetech - Kevin MacCloud
+	Need credits screen or popup window...
+	If popup, how can I tie it to the cue.
+	If credits, tie to win/lose state and a menu system - not implemented yet. 
+	
 //////////////////////////////////////
 //  Project Goals					//
 //////////////////////////////////////
