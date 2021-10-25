@@ -19,25 +19,35 @@ Oct 4-10 - Reworked the project to remove dependency on spline library.
 Oct 17 - Looked at using Github to store project. 
 
 Future work
-1) Finish Unreal Ninja course
+1) Finish Unreal Ninja course [Done]
 	- Saving and loading 
 	- Blueprints and gameplay
-	
-2) Finish Game - job hunting workshop -> Building a portfolio.
+
+2) Finish Game - job hunting workshop [Done]
+-> Building a portfolio [Done].
 	- Dig up Unity games (Bring home bacon, There goes the neighborhood, motor simulator)
+		[mostly done, missing motor simulator]
  	- Do I still have the blockout varient?
+		[Not started]
 
 3) Practice skills
 	- Mesh generatation in blender - refine graphics
 	- Work with AI, make 4 varients 
-	- UMG for player feedback.
+	- UMG for player feedback. [done - basics]
 	- Scene/level transitions - opening scene, credits, win/lose
 	
 4) A complete game
+	[Not started]
 	- 4 varients of AI.
+	[https://medium.com/@alexandre.lombard_91611/ue4-ai-perception-senses-and-stimuli-source-651d84d4d4f3]
 	- win/loss states + player feedback
+	[In progress]
 	- Simple HUD
-	- Player takes damage/player deals damage to ghost mechanic.
+	[In progress]
+	- Player takes damage from ghost mechanic.
+	[Not started]
+	- Player deals damage to ghost mechanic.
+	
 
 //////////////////////////////////////
 //  Project Goals					//
@@ -54,8 +64,19 @@ As this is my one of my first non-tutorial project in Unreal,
 Working through the Unreal Ninja course.  
  - Apply savegame blueprints.
  - Increase comfort with blueprints overall - particulary AI.
- - Using shapekeys/morph targets didn't work.  But I would still like to find a way to create maze creation tools. 
-
+ - Using shapekeys/morph targets didn't work.  
+ - But I would still like to find a way to create maze creation tools. 
+	[Editor tools] 
+	C++ version: https://lxjk.github.io/2019/10/01/How-to-Make-Tools-in-U-E.html
+	https://www.orfeasel.com/creating-custom-editor-assets/
+	[Blueprints - "Editor Utility Blueprints"]
+	https://docs.unrealengine.com/4.27/en-US/ProductionPipelines/ScriptingAndAutomation/Blueprints/
+	https://docs.unrealengine.com/4.27/en-US/ProductionPipelines/ScriptingAndAutomation/Blueprints/CallInEditor/
+	https://docs.unrealengine.com/4.27/en-US/ProductionPipelines/ScriptingAndAutomation/Blueprints/ScriptedActions/
+		https://docs.unrealengine.com/4.27/en-US/ProductionPipelines/ScriptingAndAutomation/Blueprints/StartupObjects/
+	
+	
+	
 //////////////////////////////////////
 
 //////////////////////////////////////
@@ -64,20 +85,23 @@ Working through the Unreal Ninja course.
 
 Challenge: needs to be more fun.
 Ideas:
- - do the pac man points pickups.  These were in the original LD49 game and provided immediate goals.
- - Player takes damage/player deals damage to ghost mechanic.
- - When are you in danger vs in control
- - How can skill affect the situation (do you have efficacy and agency)
+[pending] - do the pac man points pickups.  These were in the original LD49 game and provided immediate goals.
+[in progress] - Player takes damage/player deals damage to ghost mechanic.
+[pending] - When are you in danger vs in control
+[???] - How can skill affect the situation (do you have efficacy and agency)
  
  
  
 Challenge: game feel - camera clipping.
  - The camera is clipping into the walls too much which is distracting to game feel.
- - Could make the map more open 
-	- scale up all the geometry
-	- remove walls and make the map simpler.
+ - Could make the map more open
+	- Mike wants to create a new map -let him
+	- scale up all the geometry - no, make a new level
+	- remove walls and make the map simpler - no, make a new level.
+
 ** - could change camera to FPS
 	- I want to vary camera from FPS, to 3rd person, to minimap
+		-third person controller has much of executable function.
 	- game was based on 3rd person template - 
 	- HTF do I? Change Cameras in Unreal Engine 4 Blueprints
 	- https://youtu.be/uW86ZGxesmc
@@ -85,10 +109,12 @@ Challenge: game feel - camera clipping.
 
 Challenge: game feel
  - Think about goals and feedback.
- - Short term goals - get the power points
- - Medium term goals - get power ups that let you beat the ghosts.
- - long term goals - build a level system.  Ghost speed increases by level.
+	[Done] - Short term goals - get the power points
+	[Pending]- Medium term goals - get power ups that let you beat the ghosts.
+	[Pending]- long term goals - build a level system.  Ghost speed increases by level.
 
+
+[Pending]
 Challenge: core game mechanic 
  - Core mechanic of pac man is chase, scatter, and flee.
 	A) Chase player
@@ -107,18 +133,22 @@ Challenge: core game mechanic
 	- I don't recall ghosts following player through this.  
 	- they might wander through it, but not follow. 
 
+
 Challenge: Player feedback - HUD
  - think about HUD design.
-	- points remaining on screen
-	- score
-	- AI state - chase/scatter/flee tells for the player.
+	[Done] - points remaining on screen
+	[Done] - score
+	[Pending] - AI state - chase/scatter/flee tells for the player.
+
 
 Challenge: Audio cues
  - chomp a power point.
  - Movement
  - proximity of ghosts (tempo change? or sound)
  - time remaining on power pellets - do I want to flash the HUD as warning?
+ [Done] - background music
  
+[Pending]
 Challenge: save and load
  - See https://www.unrealengine.com/en-US/onlinelearning-courses/blueprint-runtime-saving-and-loading
  - Features save and load systems
@@ -127,16 +157,21 @@ Challenge: save and load
  - Save on lose focus (How?)
  - How do I save when computer shuts down? -> Save points at level, restore to last level.
  
+ 
 Challenge: Mike likes the jump and parcore mechanisms that allow for evading the ghosts by getting off the nav mesh.
  - Do I want to fix it.  
  - Should it be a player feature?
  - How would this play out in multiplayer.
  - Current AI still rushes the player even when off nav mesh.
 
+
+[Pending]
 Challenge: Mini-map
  - was able to implement in Unity.  
  - How do you do a second camera with a different renderer?
- 
+
+
+[Do not implement] 
 Challenge: Multiplayer
  - Needs consideration. 
  - Coop mode.
