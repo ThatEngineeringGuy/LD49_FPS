@@ -4,14 +4,15 @@ Cameras - done
 Player character -> wraith  - NOPE - done
 Walls - done
 Nav Mesh - done
-Enemies to chase player
+Enemies to chase player - done, could be improved. 
 Pickup - count pickups and display how many are left (of each color)
-
+	- done, could be improved.
+	
 Powerups 
   UI - points collected/points remaining to goal
-  Win notification
-  Lose notification 
-  - Respawn on death.
+  Win notification - done
+  Lose notification - done
+  - Respawn on death. - done
 
 
 
